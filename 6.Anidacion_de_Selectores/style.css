@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn {
+  width: 200px;
+  height: 200px;
+  font-size: 30px;
+}
+
+#btn::before {
+  content: "Pasa por encima";
+}
+
+#btn:hover {
+  color: white;
+  background-color: green;
+  cursor: pointer;
+}
+
+#btn:hover::before {
+  content: "Hecho!";
+}
